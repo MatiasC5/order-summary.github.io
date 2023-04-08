@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    background-image: url('/images/pattern-background-desktop.svg');
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    place-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+
+.container {
+    display: grid;
+    place-items: center;
+    background-color: #ffffff;
+    width: 25%;
+    height: 700px;
+    border-radius: 20px;
+    margin-top: 70px;
+    padding-bottom: 20px;
+}
+
+.container .image img {
+    width: 480px;
+    margin-top: -15px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.title {
+    font-weight: 900;
+}
+
+
+#paragraph {
+    text-align: center;
+    width: 70%;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 75%;
+    height: 100px;
+    background-color: hsl(225, 100%, 97%);
+    border-radius: 10px;
+}
+
+
+.price-container #icon-music {
+    width: 50px;
+    margin-left: 20px;
+}
+
+.price-container .title-price {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 900;
+    text-align: left;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.price-container #price {
+    color: hsl(224, 23%, 55%);
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+#change-btn {
+    background-color: hsl(225, 100%, 97%);
+    border: none;
+    font-weight: 700;
+    margin-right: 30px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#change-btn:hover {
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+
+.proceed-btn {
+    background-color: hsl(245, 75%, 52%);
+    width: 75%;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.proceed-btn:hover {
+    opacity: 0.7;
+}
+
+.cancel-btn {
+    background-color: #ffffff;
+    border: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    color: #000;
+}
+
+
+footer a {
+    color: hsl(245, 75%, 52%);
+}
+
+
+
+@media (max-width:375px) {
+
+    .price-container #price {
+        font-size: 20px;
+    }
+
+    .cancel-btn {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 1440px) {
+    .container {
+        width: 34%;
+        font-size: 20px;
+    }
+
+    #change-btn {
+        font-size: 16px;
+    }
+
+    .proceed-btn {
+        font-size: 16px;
+    }
+}
